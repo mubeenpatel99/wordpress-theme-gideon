@@ -1,0 +1,522 @@
+/* Theme Name: Gideon
+Author: Mubeen Patel
+Author URI: https://mubeenpatel99.github.io/mubeenpatel.github.io/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Description: Gideon brings your site to life with immersive featured images. With a focus on blog sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats.
+Version: 1.0
+Text Domain: gideon
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Major+Mono+Display|Montserrat&display=swap');
+body {
+    font-family: 'Montserrat';
+    color: #333;
+}
+
+p {
+    line-height: 1.65em;
+}
+
+a:link,
+a:visited {
+    color: #006ec3;
+}
+
+
+/* site container */
+
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* Header */
+
+.site-header {
+    border-bottom: 1px solid #999;
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
+
+.site-footer {
+    margin-top: 30px;
+    border-top: 1px solid #999;
+}
+
+.site-nav {
+    margin-top: 20px;
+}
+
+
+/* Content Area */
+
+article.post {
+    border-bottom: 2px dotted #bbbbbb;
+    margin-bottom: 20px;
+}
+
+article.post:last-of-type {
+    border-bottom: none;
+}
+
+
+/* Aside Style */
+
+article.post-aside,
+article.post-link {
+    font-size: 125%;
+    background-color: #fff5cb;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: none;
+}
+
+.aside-meta {
+    font-size: 68%;
+    margin: 0;
+    color: #777;
+}
+
+.post-meta p {
+    margin-top: 0;
+}
+
+
+/* post format gallery styles */
+
+article.post-gallery {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+}
+
+article.post-gallery img {
+    border: none !important;
+}
+
+article.post-gallery h2 {
+    text-align: center;
+}
+
+
+/* link post format styles */
+
+article.post-link {
+    padding: 0;
+    background-color: #e0ebff;
+}
+
+article.post-link a {
+    display: block;
+    padding: 20px;
+}
+
+
+/* Naviagtion menu! */
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav ul:before,
+.site-nav ul:after {
+    content: "";
+    display: table;
+}
+
+.site-nav ul:after {
+    clear: both;
+}
+
+.site-nav ul {
+    *zoom: 1;
+}
+
+.site-nav ul li {
+    list-style: none;
+    float: left;
+}
+
+.site-header h1 {
+    margin-bottom: 0 !important;
+}
+
+.site-header h5 {
+    margin-top: 0 !important;
+    color: #999;
+}
+
+.site-header nav ul li {
+    margin-right: 10px;
+}
+
+.site-header nav ul li:hover {
+    background-color: #ececec;
+}
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+    display: block;
+    padding: 10px 18px;
+    border: 1px solid #bbbbbb;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited {
+    color: #ffffff;
+    background-color: #006ec3;
+}
+
+
+/* footer menu */
+
+.site-footer nav li {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 2px dotted #999;
+    float: right;
+}
+
+
+/* footer widgets area */
+
+.footer-widget-area {
+    width: 25%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+
+/* page layuot */
+
+article.page h2 {
+    font-size: 300%;
+}
+
+
+/* home page links */
+
+.home-columns {
+    padding-top: 30px;
+}
+
+.one-half {
+    float: left;
+    width: 45%;
+    margin-right: 10%;
+}
+
+.last {
+    margin-right: 0;
+}
+
+.one-half h2 {
+    font-size: 140%;
+}
+
+.date {
+    font-size: 50%;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+
+/* Portolio page layout */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.title-column {
+    width: 30%;
+    float: left;
+}
+
+.text-column {
+    width: 70%;
+    float: right;
+}
+
+.portfolio-heading {
+    font-size: 200%;
+    ;
+}
+
+
+/* info box styles */
+
+.info-box {
+    width: 30%;
+    float: right;
+    margin: 0 0 30px 30px;
+    padding: 20px;
+    background-color: #eee;
+}
+
+.info-box h4 {
+    margin-bottom: 6px;
+}
+
+.info-box p {
+    font-size: 85%;
+}
+
+
+/* children links */
+
+.children-links {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 90%;
+}
+
+.children-links li {
+    margin-right: 20px;
+}
+
+.children-links .parent-link {
+    float: left;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.children-links .parent-link a:visited,
+.children-links .parent-link a:link {
+    color: #333;
+}
+
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited {
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    cursor: default;
+}
+
+.post-meta {
+    margin-top: 0;
+    color: #999;
+    font-size: 87%;
+}
+
+.post-meta a:link,
+.post-meta a:visited {
+    color: #999;
+}
+
+article h2 {
+    margin-bottom: 0;
+}
+
+.site-header h1 a:link,
+.site-header h1 a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.post h2 a:link,
+.post h2 a:visited {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.has-thumbnail {
+    position: relative;
+    padding-left: 200px;
+}
+
+.post-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* main column */
+
+.main-column {
+    width: 66%;
+    float: left;
+}
+
+
+/* Side bar Right */
+
+.secondary-column {
+    width: 30%;
+    float: right;
+}
+
+.widget-item-sidebar {
+    border-bottom: 1px solid #e0ebff;
+}
+
+
+/* search section */
+
+.head-search {
+    float: right;
+}
+
+.head-search label {
+    position: absolute;
+    left: -9999px;
+}
+
+.head-search #searchsubmit {
+    background-color: #006ec3;
+    color: #fff;
+    padding: 5px 14px;
+    border: none;
+    vertical-align: top;
+}
+
+.head-search #s {
+    vertical-align: top;
+    padding: 4px;
+    border: 1px solid #bbbbbb;
+}
+
+
+/* About the Author Section */
+
+.about-author {
+    background-color: #ededed;
+    padding: 20px;
+}
+
+.about-author-image {
+    position: relative;
+    float: left;
+    width: 28%;
+}
+
+.about-author-image img {
+    display: block;
+}
+
+.about-author-image p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4px 0;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.85);
+    color: #fff;
+}
+
+.about-author-text {
+    float: right;
+    width: 68%;
+}
+
+.other-posts-by li {
+    list-style: none;
+}
+
+.other-posts-by ul {
+    background-color: #fff;
+    padding: 15px 30px 15px 30px;
+    margin-top: 0;
+}
+
+.other-posts-by li a:link,
+.other-posts-by li a:visited {
+    text-decoration: none;
+    color: #006ec3;
+    padding: 5px;
+}
+
+.other-posts-by h4 {
+    margin-bottom: 6px;
+}
+
+
+/* Pagination */
+
+.pagination {
+    text-align: center;
+}
+
+.page-numbers {
+    border: 1px dotted black;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+/* Contact Form */
+
+input {
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #bbbbbb;
+    outline: none;
+}
+
+textarea {
+    padding: 20px;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+    padding: 10px;
+    background-color: #006ec3;
+    color: #fff;
+    font-size: 22px;
+}
+
+.wpcf7-form-control.wpcf7-submit:hover {
+    color: #006ec3;
+    background-color: #fff;
+    cursor: grab;
+}
+
+.left-form {
+    width: 50%;
+    float: left;
+}
+
+.right-section {
+    width: 40%;
+    float: right;
+}
+
+.contact-form {
+    font-family: 'Montserrat';
+}
